@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/secondsTextView"
         android:layout_width="409dp"
         android:layout_height="48dp"
         android:gravity="center"
@@ -16,26 +16,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.585" />
+        app:layout_constraintVertical_bias="0.565" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/secondsButton"
         android:layout_width="282dp"
         android:layout_height="46dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="236dp"
         android:text="Convert to seconds"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf=""
-        app:layout_constraintTop_toBottomOf=""
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/minuteTexView"
         android:layout_width="409dp"
         android:layout_height="48dp"
         android:gravity="center"
@@ -44,26 +41,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411" />
+        app:layout_constraintVertical_bias="0.382" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/minuteButton"
         android:layout_width="282dp"
         android:layout_height="46dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="356dp"
         android:text="Convert to minutes"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf=""
-        app:layout_constraintTop_toBottomOf=""
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/daysInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -81,31 +75,28 @@
         android:layout_height="wrap_content"
         android:text="Enter number of Days"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545" />
+        app:layout_constraintVertical_bias="0.046" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/hourButton"
         android:layout_width="282dp"
         android:layout_height="46dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginRight="64dp"
-        android:layout_marginBottom="496dp"
         android:text="Convert to hours"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf=""
-        app:layout_constraintTop_toBottomOf=""
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/hourTexView"
         android:layout_width="409dp"
         android:layout_height="48dp"
         android:gravity="center"

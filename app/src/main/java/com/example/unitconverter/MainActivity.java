@@ -12,26 +12,60 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-        private Button button;
-        private TextView textView;
-        private EditText editText;
+        private Button hourButton;
+        private  Button minuteButton;
+        private Button secondsButton;
+        private EditText daysInput;
+        private TextView hourTextView;
+        private TextView minuteTextView;
+        private TextView secondsTextView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button = findViewById(R.id.button);
-        textView = findViewById(R.id.textView2);
-        editText = findViewById(R.id.editTextText);
-        button.setOnClickListener(new View.OnClickListener() {
+        daysInput = findViewById(R.id.daysInput);
+        hourButton = findViewById(R.id.hourButton);
+        minuteButton = findViewById(R.id.minuteButton);
+        secondsButton = findViewById(R.id.secondsButton);
+        hourTextView = findViewById(R.id.hourTexView);
+        minuteTextView = findViewById(R.id.minuteTexView);
+        secondsTextView = findViewById(R.id.secondsTextView);
+
+        hourButton.setOnClickListener(new View.OnClickListener() {
            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
 //                Toast.makeText(MainActivity.this, "Conversion Completed", Toast.LENGTH_SHORT).show();
-                String dayIP = editText.getText().toString();
+                String dayIP = daysInput.getText().toString();
                 int days = Integer.parseInt(dayIP);
                 int hours = days*24;
                 String hoursOP = String.valueOf(hours);
-                textView.setText("Total hours in "+days+" days is : "+hoursOP);
+                hourTextView.setText("Total hours in "+days+" days is : "+hoursOP);
+            }
+        });
+        minuteButton.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View v) {
+//                Toast.makeText(MainActivity.this, "Conversion Completed", Toast.LENGTH_SHORT).show();
+                String dayIP = daysInput.getText().toString();
+                int days = Integer.parseInt(dayIP);
+                int minutes = days*1440;
+                String hoursOP = String.valueOf(minutes);
+                hourTextView.setText("Minutes: "+minutes);
+            }
+        });
+        secondsButton.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View v) {
+//                Toast.makeText(MainActivity.this, "Conversion Completed", Toast.LENGTH_SHORT).show();
+                String dayIP = daysInput.getText().toString();
+                int days = Integer.parseInt(dayIP);
+                int seconds = days*86400;
+                String hoursOP = String.valueOf(seconds);
+                hourTextView.setText("Seconds: "+seconds);
             }
         });
     }
