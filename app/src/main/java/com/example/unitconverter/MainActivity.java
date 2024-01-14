@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 int days = Integer.parseInt(dayIP);
                 int minutes = days*1440;
                 String hoursOP = String.valueOf(minutes);
-                hourTextView.setText("Minutes: "+minutes);
+                minuteTextView.setText("Minutes: "+minutes);
             }
         });
         secondsButton.setOnClickListener(new View.OnClickListener() {
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 int days = Integer.parseInt(dayIP);
                 int seconds = days*86400;
                 String hoursOP = String.valueOf(seconds);
-                hourTextView.setText("Seconds: "+seconds);
+                secondsTextView.setText("Seconds: "+seconds);
             }
         });
     }
