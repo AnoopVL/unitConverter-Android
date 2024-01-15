@@ -1,3 +1,3 @@
 # Basic Time Converter 
 ## ScreenShot
-![Alt Text](AppDemo.jpeg)
+![Alt Text](AppDemo.png)
